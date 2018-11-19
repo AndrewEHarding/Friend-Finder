@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/AndrewEHarding/Friend-Finder/issues"
   },
-  "homepage": "https://github.com/AndrewEHarding/Friend-Finder#readme"
+  "homepage": "https://github.com/AndrewEHarding/Friend-Finder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
 }
