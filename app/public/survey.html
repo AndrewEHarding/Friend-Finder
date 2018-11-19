@@ -36,6 +36,168 @@
         </div>
     </nav>
 
+    <div class="container">
+        <h1>Friend Finder Survey:</h1>
+        <form>
+
+            <div class="form-group">
+                <label for="username">What's your name?</label>
+                <input type="text" class="form-control" id="username" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="userimg">Add a picture</label>
+                <input type="text" class="form-control" id="userimg" placeholder="Image URL">
+            </div>
+
+            <div class="form-group">
+                <label for="surveyquestion1">1. Charmander is the best starting Pokémon.</label>
+                <select class="form-control" id="surveyquestion1">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="surveyquestion2">2. Pineapple is acceptable on pizza.</label>
+                <select class="form-control" id="surveyquestion2">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="surveyquestion3">3. Star Wars is overrated.</label>
+                <select class="form-control" id="surveyquestion3">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="surveyquestion4">4. Pi = 3.</label>
+                <select class="form-control" id="surveyquestion4">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="surveyquestion5">5. The plural of Cheeze-It is Cheeze-Them.</label>
+                <select class="form-control" id="surveyquestion5">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="surveyquestion6">6. Tangled > Frozen.</label>
+                <select class="form-control" id="surveyquestion6">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="surveyquestion7">7. You can have your cake and eat it too.</label>
+                <select class="form-control" id="surveyquestion7">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="surveyquestion8">8. Die Hard is a Christmas movie.</label>
+                <select class="form-control" id="surveyquestion8">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="surveyquestion9">9. Friend Finder Express is still better than Tinder.</label>
+                <select class="form-control" id="surveyquestion9">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="surveyquestion10">10. This survey has many silly questions.</label>
+                <select class="form-control" id="surveyquestion10">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#submitmodal">Submit Survey</button>
+
+            <!-- RESULT MODAL -->
+            <div class="modal fade" id="submitmodal" tabindex="-1" role="dialog" aria-labelledby="submitmodalTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="submitmodalTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#submitmodal').on('shown.bs.modal', function () {
+                var modal = $(this);
+                $('#myInput').trigger('focus');
+            })
+
+        });
+    </script>
+
 </body>
 
 </html>
